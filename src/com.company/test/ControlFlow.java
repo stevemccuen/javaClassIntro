@@ -1,9 +1,11 @@
-package src.com.company;
+package src.com.company.test;
+
+import src.com.company.Operation;
 
 public class ControlFlow {
-    public static void main(String[] args) {
-        String word1 = "whats up";
-        String word2 = "laters";
+    public static void main(final String[] args) {
+        final String word1 = "whats up";
+        final String word2 = "laters";
         int number1 = 26;
 
         // if - if else control flow statements
@@ -24,9 +26,8 @@ public class ControlFlow {
         }
         if (word1.length() <= number1){
             System.out.println("lets play a game");
-        com.company.WordGame.playGame();
         }
-        Operation doMath = new Operation();
+        final Operation doMath = new Operation();
         System.out.println(doMath.add(number1,4));
         System.out.println(doMath.message("Hmmm"));
         System.out.println(doMath.subtract(number1,15));

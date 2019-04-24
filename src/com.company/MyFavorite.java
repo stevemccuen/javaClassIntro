@@ -6,25 +6,25 @@ public class MyFavorite {
     private String favColor = "midnight purple";
 
     public String getMyName() {
-        return myName;
+        return this.myName;
     }
 
-    public void setMyName(String myName) {
+    public void setMyName(final String myName) {
         this.myName = myName;
     }
     public String getfavFood(){
-        return favFood;
+        return this.favFood;
     }
-    public void setfavFood(String favFood){
+    public void setfavFood(final String favFood){
         this.favFood = favFood;
     }
     public String getfavColor(){
-        return favColor;
+        return this.favColor;
     }
-    public void setfavColor(String favColor){
+    public void setfavColor(final String favColor){
         this.favColor = favColor;
     }
-    public  void playFavSong(String favSong){
+    public  void playFavSong(final String favSong){
         System.out.println("Playing your favorite song:  " + favSong);
 
     }

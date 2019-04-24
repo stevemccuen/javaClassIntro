@@ -8,19 +8,19 @@ public class Operation {
     // a = first number ; b = second number
 
     // Add +
-    public int add(int a, int b){
+    public int add(final int a, final int b){
         return a + b;
     }
     // Subtract -
-    public int subtract(int a , int b){
+    public int subtract(final int a , final int b){
         return a - b;
     }
     // Multiply *
-    public int multiply(int a , int b){
+    public int multiply(final int a , final int b){
         return a * b;
     }
     // Division /
-    public int divide(int a , int b){
+    public int divide(final int a , final int b){
         return a / b;
     }
     //Increment ++
@@ -32,15 +32,15 @@ public class Operation {
         return a--;
     }
     // Modulus %
-    public int modulus(int a , int b) {
+    public int modulus(final int a , final int b) {
         return a % b;
     }
-    public int multadd(int a, int b, int c){
-        int sum = a + b;
+    public int multadd(final int a, final int b, final int c){
+        final int sum = a + b;
         return sum * c;
     }
-    public String  message(String a){
-        String mesg = "whats up";
+    public String  message(final String a){
+        final String mesg = "whats up";
         return a + mesg;
     }
 }

@@ -1,4 +1,4 @@
-package com.company;
+package src.com.company;
 
 import java.util.Scanner;
 
@@ -16,9 +16,9 @@ public class StringExamples {
     // sout ENTER creates System.out.printIn();
     // psvm ENTER creates Public Static Void Main(String[] args);
 
-    public static void main(String[] args){
+    public static void main(final String[] args){
         System.out.println("Enter A 5  Letter Word Please Or Die");
-        String example;
+        final String example;
         example = new Scanner(System.in).next();
         System.out.println(example.charAt(example.length()/2));
         System.out.println(example.equals(example));

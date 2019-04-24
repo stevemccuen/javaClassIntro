@@ -1,15 +1,15 @@
 package src.com.company;
 
 public class KnowingMyVariables2 {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         // Call all of our methods from here.
-        knowingMyVariables2test();
+        KnowingMyVariables2.knowingMyVariables2test();
     }
 
     // Write all of our methods out fo here.
     public static void knowingMyVariables2test(){
-        MyFavorite Steven = new MyFavorite();
+        final MyFavorite Steven = new MyFavorite();
 
         Steven.setMyName("Steven McCuen");
         Steven.setfavColor("saphire blue");

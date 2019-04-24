@@ -1,4 +1,6 @@
-package src.com.company;
+package src.com.company.test;
+
+import src.com.company.WordGame;
 
 import java.util.Scanner;
 
@@ -7,8 +9,8 @@ public class DaysOfWeek {
     i will create a Days OF Week Converter
     from the numbered day to the actual Day Of the Week
      */
-    public static void main(String[] args) {
-        daysOfWeekConverter();
+    public static void main(final String[] args) {
+        DaysOfWeek.daysOfWeekConverter();
 
     }
 
@@ -19,46 +21,46 @@ public class DaysOfWeek {
         System.out.println("Ill tell you the Week Day");
         System.out.println("Some days have games installed");
         // Grabbing Input From User For Week Day Number
-        int weekDay = new Scanner(System.in).nextInt();
+        final int weekDay = new Scanner(System.in).nextInt();
         // utilizing switch statement to handle multiple outputs
         //WordGame wg = new WordGame();
-        playGame wg = new WordGame();
+        final WordGame wg = new WordGame();
 
         switch(weekDay){
             case 1: {
-                String m = "Monday";
+                final String m = "Monday";
                 System.out.println(m);
             }
             break;
             case 2: {
-                String tu = "Tuesday";
+                final String tu = "Tuesday";
                 System.out.println(tu);
             }
             break;
             case 3: {
-                String w = "Wednesday";
+                final String w = "Wednesday";
                 System.out.println(w);
             }
             break;
             case 4: {
-                String th = "Thursday";
+                final String th = "Thursday";
                 System.out.println(th);
             }
             break;
             case 5: {
-                String f = "Friday";
+                final String f = "Friday";
                 System.out.println(f);
-               wg.playGame();
+
 
             }
             break;
             case 6: {
-                String sa = "Saturday";
+                final String sa = "Saturday";
                 System.out.println(sa);
             }
             break;
             case 7: {
-                String su = "Sunday";
+                final String su = "Sunday";
                 System.out.println(su);
             }
             break;
