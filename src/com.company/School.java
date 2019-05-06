@@ -26,7 +26,7 @@ public class School<created> {
     /**
      * Adds total money earned by the school.
      *
-     * @param MoneyEarned money that is supposed to be added.
+     * money that is supposed to be added.
      */
     public static void updateTotalMoneyEarned(int MoneyEarned) {
         totalMoneyEarned += MoneyEarned;
@@ -36,7 +36,7 @@ public class School<created> {
      * Update the money that is spent by the school which
      * is the salary given by the school to it's teachers.
      *
-     * @param totalMoneySpent the money spent by the school.
+     * the money spent by the school.
      */
     public static void updateTotalMoneySpent(int moneySpent) {
         totalMoneyEarned -= moneySpent;
@@ -52,24 +52,24 @@ public class School<created> {
     /**
      * Adds a teacher to the school.
      *
-     * @param teachers the teacher to be added.
+     * @param teacher the teacher to be added.
      */
 
-    public void addTeachers(Teachers teacher) {
+    public void addTeachers(Teacher teacher) {
         teachers.add(teacher);
     }
 
     /**
      * @return the list of students in the school.
      */
-    public List<Students> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
     /**
      * @param student add student to the school.
      */
-    public void addStudent(Students student) {
+    public void addStudent(Student student) {
         students.add(student);
     }
 
